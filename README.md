@@ -6,7 +6,7 @@ Edelweiss Mutual Fund ([edelweissmf.com](https://www.edelweissmf.com/)) is India
 
 The live site is built around making investing feel simple: browse funds by category, compare options, start SIP or lumpsum from the same screen, and use guided bundles when someone wants a ready-made allocation mix. An AI assistant named **Ellie** helps with questions and portfolio access. A separate **eInvest** mobile app extends the same experience on the go. Behind the scenes, the business runs on a cloud-first, API-led stack so the site can stay up during busy periods like new fund offers (NFOs) and handle growth without slowing investors down.
 
-This case study describes that digital mutual fund platform—what problem it solves, how it is put together, who it is for, what was delivered, and where to see it live.
+This case study describes that digital mutual fund platform—the problem it addressed, how it is built, who it serves, what was delivered, and where to see it live.
 
 ## Technology stack
 
@@ -31,7 +31,19 @@ Their audience includes:
 - **Partners and distributors** who need reliable access, co-branded journeys, and operational support alongside the investor experience
 - **Internal teams** (operations, compliance, product, marketing) who need scalable systems, accurate reporting, and shorter time-to-market for new offerings
 
-As mutual fund adoption grew in India, a legacy digital stack could not keep up: limited concurrency, slow UI, security gaps, and expensive change cycles. Edelweiss needed a modern platform that matches how people actually invest today—mostly online, often on mobile, with instant information and strong regulatory guardrails.
+## The problem
+
+Edelweiss had strong brand trust and a growing mutual fund business, but the older digital channel was holding the experience back. As more Indians started investing online—especially through SIPs and mobile—gaps between what customers expected and what the legacy platform could deliver became hard to ignore.
+
+- **Could not handle peak demand**: Legacy servers were built for a few hundred concurrent users. During busy periods such as new fund offers (NFOs), traffic spikes caused slowdowns or instability when thousands of investors tried to transact at once.
+- **Poor investor experience on web and mobile**: Slow screens, inconsistent behavior, and long response times made research, comparison, and checkout frustrating. Digital-savvy users compared the experience unfavorably to modern fintech apps and often dropped off or called support instead.
+- **Fragmented web vs mobile delivery**: Separate code paths and outdated front-end stacks made it costly to ship the same features on the website and in the app. Product teams could not move at the speed the business needed.
+- **Security and compliance risk**: Older modules did not meet current expectations for protecting financial and personal data. For a regulated AMC, weak security was both a reputational risk and a blocker to scaling digital transactions.
+- **Slow, expensive change cycles**: A monolithic setup meant every new feature or regulatory change required heavy regression testing and scarce specialist skills. Time-to-market for NFOs and scheme updates suffered.
+- **Data stuck in silos**: Reporting, NAV/benchmark publishing, and internal analytics relied on fragmented databases and manual steps. Teams waited on data instead of acting on it, which hurt compliance turnaround and client reporting.
+- **Lost revenue and satisfaction**: When the digital channel felt unreliable, investors stayed offline, partners leaned on manual processes, and opportunities were missed. Customer satisfaction and the premium feel of the Edelweiss brand were both at stake.
+
+Edelweiss needed one modern platform—in **Angular** for web and **Ionic** for mobile—backed by cloud scale, APIs, and stronger security, so investors and partners could research, invest, and get support anytime without the old system getting in the way.
 
 ## The solution
 
